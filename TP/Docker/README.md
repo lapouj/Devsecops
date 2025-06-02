@@ -6,7 +6,6 @@ Installer et vérifier le bon fonctionnement de Docker et Docker Compose sur une
 ---
 
 # Installation de Docker
----
 
 ### 📦 Mise à jour du système
 
