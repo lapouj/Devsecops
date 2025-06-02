@@ -14,23 +14,17 @@ Installer et vérifier le bon fonctionnement de Docker et Docker Compose sur une
 sudo apt update && sudo apt upgrade -y
 ```
 
----
-
 ### 🧰 Installation des dépendances
 
 ```bash
 sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release -y
 ```
 
----
-
 ### 🔐 Ajout de la clé GPG Docker
 
 ```bash
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
-
----
 
 ### ➕ Ajout du dépôt Docker
 
@@ -41,8 +35,6 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
----
-
 ### 🐳 Installation de Docker Engine
 
 ```bash
@@ -50,16 +42,12 @@ sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io -y
 ```
 
----
-
 ### ▶️ Test de fonctionnement Docker
 
 ```bash
 sudo systemctl status docker
 sudo docker run hello-world
 ```
-
----
 
 ### 🧩 Installation de Docker Compose
 
@@ -70,8 +58,6 @@ sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
----
-
 ### 🧪 Vérification
 
 ```bash
@@ -79,3 +65,4 @@ docker-compose --version
 ```
 
 ---
+
