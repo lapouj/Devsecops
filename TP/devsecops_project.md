@@ -2,12 +2,12 @@
 
 ## 📌 Contexte du projet
 
-- **Nom du projet** : [Nom de ton projet]
-- **Type de projet** : [Web, API, Mobile, Automatisation, Infra, etc.]
-- **Durée** : [Ex. 2 mois]
-- **Technos utilisées** : [Langages, outils, plateformes, etc.]
+- **Nom du projet** : Site e-commerce "Perles et Créations"
+- **Type de projet** : Site marchand (WordPress + WooCommerce)
+- **Durée** : Environ [à compléter] semaines
+- **Technos utilisées** : WordPress, WooCommerce, PHP, MySQL, HTML, CSS, JavaScript, FTP, OVH, TLS/SSL
 - **Objectif du projet** :  
-  > Décris en 2-3 phrases ce que le projet faisait, son intérêt personnel ou professionnel.
+Développer un site e-commerce pour une cliente artisanale vendant des perles, permettant la gestion de ses produits, des paiements en ligne, du catalogue et des commandes via un back-office accessible.
 
 ---
 
@@ -15,133 +15,155 @@
 
 ### Phase 1 – 🗂️ PLAN
 
-- **Ce que j’ai fait** :
-  > [As-tu planifié ton projet ? Écrit des specs ? Anticipé des risques ?]
+- **Ce que j’ai fait** :  
+Le projet a été planifié de manière assez informelle, via un Google Drive partagé et des réunions orales hebdomadaires. Les besoins de la cliente étaient souvent transmis par téléphone.
 
-- **Ce qui était adapté** ✅ :
-  > [Ex. : j’ai réfléchi aux besoins de sécurité dès le début, j’ai identifié les utilisateurs...]
+- **Ce qui était adapté** ✅ :  
+  - Présence d’un planning général
+  - Communication hebdomadaire régulière avec l’équipe
 
-- **Ce que j’aurais pu améliorer** ⚠️ :
-  > [Ex. : je n’ai pas pensé aux risques de sécurité, ni défini de backlog sécurité.]
+- **Ce que j’aurais pu améliorer** ⚠️ :  
+  - Absence de gestion formelle des risques
+  - Pas de trace écrite systématique des besoins ou des changements
+  - Aucune prise en compte de la sécurité dès la planification (pas de backlog sécurité, pas de modélisation de menaces)
 
 ---
 
 ### Phase 2 – 💻 CODE
 
-- **Ce que j’ai fait** :
-  > [Ton organisation du code, outils utilisés, bonnes pratiques]
+- **Ce que j’ai fait** :  
+J’ai développé en PHP, HTML, CSS, JS, en m’appuyant sur WordPress et WooCommerce, avec parfois des modifications directes dans les thèmes.
 
-- **Ce qui était adapté** ✅ :
-  > [Ex. : séparation des secrets, utilisation de `bandit`, clean code...]
+- **Ce qui était adapté** ✅ :  
+  - Utilisation d’un thème enfant pour éviter d’écraser les modifications
+  - Respect des langages standard du web
 
-- **Ce que j’aurais pu améliorer** ⚠️ :
-  > [Ex. : j’ai laissé des credentials dans un `.env` versionné]
+- **Ce que j’aurais pu améliorer** ⚠️ :  
+  - Modifications de fichiers sensibles directement en prod sans versioning
+  - Aucun dépôt Git ou suivi de version
+  - Pas de revue de code ni gestion collaborative
 
 ---
 
 ### Phase 3 – 🔨 BUILD
 
-- **Ce que j’ai fait** :
-  > [Comment tu as compilé, packagé, conteneurisé ton app]
+- **Ce que j’ai fait** :  
+Pas de processus de build automatisé. Le site était assemblé via des plugins, des fichiers PHP/CSS personnalisés, puis envoyé via FTP.
 
-- **Ce qui était adapté** ✅ :
-  > [Ex. : utilisation de Docker, build reproductible...]
+- **Ce qui était adapté** ✅ :  
+  - Structure technique cohérente à l’échelle du CMS
 
-- **Ce que j’aurais pu améliorer** ⚠️ :
-  > [Ex. : pas de scan des images, pas de versioning clair]
+- **Ce que j’aurais pu améliorer** ⚠️ :  
+  - Aucun pipeline de build, aucun scan des plugins ou des dépendances
+  - Pas d’environnement d'intégration
+  - Pas de contrôle de version des plugins ou thèmes personnalisés
 
 ---
 
 ### Phase 4 – 🧪 TEST
 
-- **Ce que j’ai fait** :
-  > [Types de tests faits : unitaires, intégration, manuels, automatisés]
+- **Ce que j’ai fait** :  
+Tests manuels principalement. Quelques correctifs faits en production pour améliorer l’expérience utilisateur.
 
-- **Ce qui était adapté** ✅ :
-  > [Ex. : j’ai utilisé `pytest`, fait des tests sur les erreurs, etc.]
+- **Ce qui était adapté** ✅ :  
+  - Suivi des retours client pour corriger les bugs visuels et UX
+  - Tests "live" avec le senior pour certaines fonctions
 
-- **Ce que j’aurais pu améliorer** ⚠️ :
-  > [Ex. : pas de tests de sécurité automatisés, pas de test de dépendances]
+- **Ce que j’aurais pu améliorer** ⚠️ :  
+  - Pas d’environnement de préproduction
+  - Aucun test automatisé (unitaires, fonctionnels, etc.)
+  - Pas de validation de sécurité des formulaires ou entrées utilisateur
 
 ---
 
 ### Phase 5 – 🚀 RELEASE
 
-- **Ce que j’ai fait** :
-  > [Comment tu validais une version prête à être livrée]
+- **Ce que j’ai fait** :  
+Mise en ligne manuelle par FTP à chaque fois que la cliente validait une modification importante.
 
-- **Ce qui était adapté** ✅ :
-  > [Ex. : tagging, changelog, stockage des artefacts...]
+- **Ce qui était adapté** ✅ :  
+  - Communication directe avec le client pour validation
 
-- **Ce que j’aurais pu améliorer** ⚠️ :
-  > [Ex. : pas de politique de release, aucune vérification finale]
+- **Ce que j’aurais pu améliorer** ⚠️ :  
+  - Pas de release taguée ou versionnée
+  - Pas de suivi des changements (changelog)
+  - Aucun audit ou vérification finale avant mise en ligne
 
 ---
 
 ### Phase 6 – 📦 DEPLOY
 
-- **Ce que j’ai fait** :
-  > [Ton mode de déploiement : FTP, Docker, CI/CD ?]
+- **Ce que j’ai fait** :  
+Déploiement manuel via FTP directement sur l’hébergement OVH. La cliente avait la propriété du compte OVH mais l’agence gérait les accès.
 
-- **Ce qui était adapté** ✅ :
-  > [Ex. : déploiement via pipeline, séparé entre dev/prod...]
+- **Ce qui était adapté** ✅ :  
+  - Hébergement OVH avec certificat SSL actif
+  - Sauvegardes hebdomadaires et mensuelles
 
-- **Ce que j’aurais pu améliorer** ⚠️ :
-  > [Ex. : pas de rollback possible, secrets dans le Dockerfile...]
+- **Ce que j’aurais pu améliorer** ⚠️ :  
+  - Déploiements non traçables
+  - Aucun rollback possible
+  - Pas de séparation claire entre environnement de développement, test, production
 
 ---
 
 ### Phase 7 – ⚙️ OPERATE
 
-- **Ce que j’ai fait** :
-  > [Ton projet fonctionnait-il 24/7 ? As-tu fait du monitoring manuel ?]
+- **Ce que j’ai fait** :  
+La cliente utilisait le site en autonomie, et je gérais certains correctifs à la demande (bugs mineurs, ajustements).
 
-- **Ce qui était adapté** ✅ :
-  > [Ex. : logs stockés, version des services contrôlée...]
+- **Ce qui était adapté** ✅ :  
+  - Suivi du bon fonctionnement via retours directs de la cliente
+  - Correctifs rapides en cas de bug visuel ou d’interface
 
-- **Ce que j’aurais pu améliorer** ⚠️ :
-  > [Ex. : pas de durcissement OS, peu de surveillance système]
+- **Ce que j’aurais pu améliorer** ⚠️ :  
+  - Pas de supervision ou de logs centralisés
+  - Modifications à chaud sur les fichiers de prod
+  - Aucun contrôle d’intégrité ou surveillance système
 
 ---
 
 ### Phase 8 – 🔍 MONITOR
 
-- **Ce que j’ai fait** :
-  > [Tu as surveillé ton app ? Mis en place des alertes ou des logs ?]
+- **Ce que j’ai fait** :  
+Pas de monitoring automatisé. Seuls les spams dans les formulaires ont été notés.
 
-- **Ce qui était adapté** ✅ :
-  > [Ex. : journaux d’erreurs analysés, dashboard rudimentaire]
+- **Ce qui était adapté** ✅ :  
+  - Formulaire protégé par un CAPTCHA simple
+  - Certificat TLS actif (HTTPS)
 
-- **Ce que j’aurais pu améliorer** ⚠️ :
-  > [Ex. : pas d’alertes en cas de bug ou faille, logs non centralisés]
+- **Ce que j’aurais pu améliorer** ⚠️ :  
+  - Aucun système de détection d'intrusion
+  - Pas de log d’accès ni d’alertes
+  - Faible visibilité sur les performances ou les erreurs
 
 ---
 
 ## 🎯 Bilan général
 
 - **Points forts de mon approche DevSecOps** :
-  > [Liste claire : ex. bonne séparation des environnements, code sécurisé, CI/CD utilisé…]
+  - Réactivité face aux bugs
+  - Bonne compréhension des technos web
+  - Capacité à résoudre des problèmes rapidement
 
 - **Faiblesses identifiées** :
-  > [Ce que tu ferais différemment aujourd’hui, avec plus de maturité DevSecOps]
+  - Aucune automatisation, versioning ou CI/CD
+  - Manque total de culture sécurité
+  - Absence de collaboration structurée et de traçabilité
 
 - **Ce que j’ai appris** :
-  > [Ton retour d’expérience, lien avec la sécurité, l’automatisation, la collaboration]
+  - L’importance de la sécurité dès la phase de planification
+  - L’utilité des environnements séparés (dev, test, prod)
+  - La nécessité d’intégrer Git, des tests et des scans dans le cycle
 
 ---
 
 ## 📌 Pistes d’amélioration concrètes
 
-1. Ajouter un pipeline CI/CD avec des scans (`Semgrep`, `Trivy`, `Bandit`)
-2. Intégrer un outil de monitoring (`Grafana`, `Prometheus`, `ELK`)
-3. Utiliser `Vault` pour la gestion des secrets
-4. Modéliser les menaces (STRIDE) en phase de planification
-5. Documenter les incidents et décisions pour audit futur
+1. Utiliser Git + GitHub dès le début de tout projet
+2. Ajouter une CI simple avec tests, scans de plugins (via Trivy ou WPScan)
+3. Mettre en place un environnement de staging pour les pré-tests
+4. Automatiser les sauvegardes et surveiller les logs
+5. Créer un changelog clair pour chaque release
 
 ---
-
-## 📄 Annexes (facultatives)
-
-- Lien vers le dépôt Git : [URL]
-- Exemple de Dockerfile ou `.gitlab-ci.yml`
-- Screenshot du projet
