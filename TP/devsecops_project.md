@@ -2,12 +2,12 @@
 
 ## 📌 Contexte du projet
 
-- **Nom du projet** : Site e-commerce "Perles et Créations"
-- **Type de projet** : Site marchand (WordPress + WooCommerce)
-- **Durée** : Environ [à compléter] semaines
-- **Technos utilisées** : WordPress, WooCommerce, PHP, MySQL, HTML, CSS, JavaScript, FTP, OVH, TLS/SSL
+- **Nom du projet** : Création d'un site e-commerce de vente de perles, en tant que dév dans une agence web.
+- **Type de projet** : Site marchand Prestashop.
+- **Durée** : Environ 8 semaines, suivi continue par la suite pour les mise à jour et demandes de modification.
+- **Technos utilisées** : Prestashop, PHP, MySQL, HTML, CSS, JavaScript, FTP, OVH, TLS/SSL.
 - **Objectif du projet** :  
-Développer un site e-commerce pour une cliente artisanale vendant des perles, permettant la gestion de ses produits, des paiements en ligne, du catalogue et des commandes via un back-office accessible.
+Développer un site e-commerce pour une cliente vendant des perles et bijoux, permettant la gestion de ses produits, des paiements en ligne, du catalogue et des commandes via un back-office accessible.
 
 ---
 
