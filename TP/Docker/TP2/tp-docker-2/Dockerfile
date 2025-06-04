@@ -5,7 +5,8 @@ WORKDIR /myapp
 COPY package.json /myapp/
 
 RUN npm install --production
-# On réduit les dépendances
+# L'option production permet de n’installer que les dépendances nécessaires à l’exécution de l’application (et pas celles destinées au développement)
+# ça permet notament de limiter la surface d'attaque en prod
 
 COPY src/ /myapp/src/
 
